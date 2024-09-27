@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 // creo ls funcion para la carta pasandole el argumento de propiedades para hacerla reutilizable con todas las cartas
@@ -13,5 +14,13 @@ const Card = (props) => {
         </div>
     );
 }
+
+//importo los PropTypes que es lo unico que no he realizado antes y que le anyadire a este codigo, luego lo editare en home.jsx
+Card.propTypes = {
+    imagen : PropTypes.string,
+    titulo : PropTypes.string,
+    descripcion : PropTypes.string,
+    link : PropTypes.string
+};
 
 export default Card;
